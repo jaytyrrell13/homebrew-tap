@@ -5,20 +5,20 @@
 class Pal < Formula
   desc ""
   homepage "https://github.com/jaytyrrell13/pal"
-  version "0.6.1"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.6.1/pal_Darwin_x86_64.tar.gz"
-      sha256 "24009d1c76e9552d55e84bad6430b57930efcdb389a5969782f47ce78d6d0ff5"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Darwin_x86_64.tar.gz"
+      sha256 "65e49cabdad2691686a0e13b73036da82c28b01e5440d773cc634c889b8d2737"
 
       def install
         bin.install "pal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.6.1/pal_Darwin_arm64.tar.gz"
-      sha256 "ddc47295d414b2e4fc62226820651c5a5fc2a6d54df302f8f4c79e69c3712b50"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Darwin_arm64.tar.gz"
+      sha256 "73ff964570156dae2531b54fd6b16b0583f5e63dfed7ae701008927b21525aed"
 
       def install
         bin.install "pal"
@@ -28,16 +28,16 @@ class Pal < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.6.1/pal_Linux_x86_64.tar.gz"
-      sha256 "a2dc42f8f617944cb1719539d0e121e186cc054584ab016c10912f419f1b440b"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Linux_x86_64.tar.gz"
+      sha256 "6a1cf955ec8465fda1130dad416edb7fe4a08a8087598b141762e4ca1e3a2564"
 
       def install
         bin.install "pal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.6.1/pal_Linux_arm64.tar.gz"
-      sha256 "99c8629de5e41adfb7ec3fb54e043449716ff3e7700205367cd29266e69e6445"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Linux_arm64.tar.gz"
+      sha256 "ecd0df9a6eebcf2c1f03f737f7bf0a41d75a0947bb9f8c38e38bedf9468d9d28"
 
       def install
         bin.install "pal"
