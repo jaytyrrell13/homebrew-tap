@@ -5,20 +5,20 @@
 class Pal < Formula
   desc ""
   homepage "https://github.com/jaytyrrell13/pal"
-  version "0.7.0"
+  version "0.8.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Darwin_x86_64.tar.gz"
-      sha256 "65e49cabdad2691686a0e13b73036da82c28b01e5440d773cc634c889b8d2737"
+    on_intel do
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.8.0/pal_Darwin_x86_64.tar.gz"
+      sha256 "380a64e5738f571343c8c21a79ef42e6c591e1c37e6ab14d83bfb3024960fea9"
 
       def install
         bin.install "pal"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Darwin_arm64.tar.gz"
-      sha256 "73ff964570156dae2531b54fd6b16b0583f5e63dfed7ae701008927b21525aed"
+    on_arm do
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.8.0/pal_Darwin_arm64.tar.gz"
+      sha256 "5b5b4851d919a12eaad2f6b21f5dd0debce0453cae328f849fd04f6f89e42e38"
 
       def install
         bin.install "pal"
@@ -27,20 +27,24 @@ class Pal < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Linux_x86_64.tar.gz"
-      sha256 "6a1cf955ec8465fda1130dad416edb7fe4a08a8087598b141762e4ca1e3a2564"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/jaytyrrell13/pal/releases/download/v0.8.0/pal_Linux_x86_64.tar.gz"
+        sha256 "0123e02fc456e93cbc6757a860d8d5225249a31d82baf9d4f83948ea53cc7e73"
 
-      def install
-        bin.install "pal"
+        def install
+          bin.install "pal"
+        end
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.7.0/pal_Linux_arm64.tar.gz"
-      sha256 "ecd0df9a6eebcf2c1f03f737f7bf0a41d75a0947bb9f8c38e38bedf9468d9d28"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/jaytyrrell13/pal/releases/download/v0.8.0/pal_Linux_arm64.tar.gz"
+        sha256 "056507b3e2067c2c8fcc3dc60b7e3fb91a3364a8bf3f18a899dd118e87d8fc3e"
 
-      def install
-        bin.install "pal"
+        def install
+          bin.install "pal"
+        end
       end
     end
   end
