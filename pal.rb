@@ -5,20 +5,20 @@
 class Pal < Formula
   desc ""
   homepage "https://github.com/jaytyrrell13/pal"
-  version "0.10.0"
+  version "0.11.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.10.0/pal_Darwin_x86_64.tar.gz"
-      sha256 "6fedafcc7f558ef8eaa31ba93c8d45475286b399ab57e34814d8493a046b19a4"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.11.0/pal_Darwin_x86_64.tar.gz"
+      sha256 "225d95ae178e4a324b036f568efa99472da40f94fe82d77b3b43c6d065eed7d5"
 
       def install
         bin.install "pal"
       end
     end
     on_arm do
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.10.0/pal_Darwin_arm64.tar.gz"
-      sha256 "a8586f9013283f7445d335501cc8cf984a8568f309f6ff0c5a865774f766bd4a"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v0.11.0/pal_Darwin_arm64.tar.gz"
+      sha256 "7ac38d0e7b299f5f457fd1d865bf6063c8396c168d872d29df085753760cfd7d"
 
       def install
         bin.install "pal"
@@ -29,8 +29,8 @@ class Pal < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaytyrrell13/pal/releases/download/v0.10.0/pal_Linux_x86_64.tar.gz"
-        sha256 "96b9c87aa15321351ea338987033315a064b93e378afb6b0a253ca1562b696c3"
+        url "https://github.com/jaytyrrell13/pal/releases/download/v0.11.0/pal_Linux_x86_64.tar.gz"
+        sha256 "8022227e3160e66af27578ecaea82393fdf8678cc379059290f1f46848783dfe"
 
         def install
           bin.install "pal"
@@ -39,8 +39,8 @@ class Pal < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaytyrrell13/pal/releases/download/v0.10.0/pal_Linux_arm64.tar.gz"
-        sha256 "ae94e3428582a66abade38577dbaa3dc120f012b8cfcf8c8a3e75c0cde7419c6"
+        url "https://github.com/jaytyrrell13/pal/releases/download/v0.11.0/pal_Linux_arm64.tar.gz"
+        sha256 "3fd52024b0dd9ea24fdb68f2fa6c976b3ad4289e341a882b2d093e6f7258c600"
 
         def install
           bin.install "pal"
