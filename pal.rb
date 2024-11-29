@@ -5,20 +5,20 @@
 class Pal < Formula
   desc ""
   homepage "https://github.com/jaytyrrell13/pal"
-  version "0.14.0"
+  version "1.0.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.14.0/pal_Darwin_x86_64.tar.gz"
-      sha256 "54ccb160a314ec42b81fda676c9c5bc63a45cc76567eb375d3528214a83703cf"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v1.0.0/pal_Darwin_x86_64.tar.gz"
+      sha256 "b0165856b4844d44a516a5fd436347ac4de9a023b0734f04d833b5efbfe48190"
 
       def install
         bin.install "pal"
       end
     end
     on_arm do
-      url "https://github.com/jaytyrrell13/pal/releases/download/v0.14.0/pal_Darwin_arm64.tar.gz"
-      sha256 "1b848a17ee49b8c0d372701006099e4e321cce9c4ef548e25bce6ce64e884f01"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v1.0.0/pal_Darwin_arm64.tar.gz"
+      sha256 "66e9c4a20a63e83662388718aed298682f9dc6718baef8ab00c87e5b63992ddd"
 
       def install
         bin.install "pal"
@@ -29,8 +29,8 @@ class Pal < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaytyrrell13/pal/releases/download/v0.14.0/pal_Linux_x86_64.tar.gz"
-        sha256 "9c22346a1bb9a2a2adf6dfe5e89fe9d09ad4369a287ff4e5b98f1c152ce6c435"
+        url "https://github.com/jaytyrrell13/pal/releases/download/v1.0.0/pal_Linux_x86_64.tar.gz"
+        sha256 "cc0cd5e47b5ff5f5450042e5e1138cc9020c0d51c6a6173af708e82744553f97"
 
         def install
           bin.install "pal"
@@ -39,8 +39,8 @@ class Pal < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaytyrrell13/pal/releases/download/v0.14.0/pal_Linux_arm64.tar.gz"
-        sha256 "d887820969da26d78c1d926223d9a33c19997fd6531394db93f6ffb0ee80c050"
+        url "https://github.com/jaytyrrell13/pal/releases/download/v1.0.0/pal_Linux_arm64.tar.gz"
+        sha256 "33abe14407de62616225e17c1bfaa6bb0856d0fec9dad64c0fbfcc64182d4a4d"
 
         def install
           bin.install "pal"
