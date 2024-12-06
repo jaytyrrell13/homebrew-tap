@@ -5,20 +5,20 @@
 class Pal < Formula
   desc ""
   homepage "https://github.com/jaytyrrell13/pal"
-  version "1.1.0"
+  version "1.2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/jaytyrrell13/pal/releases/download/v1.1.0/pal_Darwin_x86_64.tar.gz"
-      sha256 "4119e79efda9a887c4008395b0119707e919a8c11b392aca7f9c4ac51181f4d2"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.0/pal_Darwin_x86_64.tar.gz"
+      sha256 "83d9f78809e0b73365283c29da3a24aacedbfc46901eae05629935b1b741a5cf"
 
       def install
         bin.install "pal"
       end
     end
     on_arm do
-      url "https://github.com/jaytyrrell13/pal/releases/download/v1.1.0/pal_Darwin_arm64.tar.gz"
-      sha256 "135f6ecad5a45182b3b823cfc4445aee7d080dfec95fed2922a32b07823a22f8"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.0/pal_Darwin_arm64.tar.gz"
+      sha256 "8b200834948dc82b2e80df461b3ac1d527d52128e46cb69b593477d1a98c4b27"
 
       def install
         bin.install "pal"
@@ -29,8 +29,8 @@ class Pal < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaytyrrell13/pal/releases/download/v1.1.0/pal_Linux_x86_64.tar.gz"
-        sha256 "29e390a046a6dfca5f4f2ca97bc35970e36c8e9bbbd7ce974db231eff94d68a4"
+        url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.0/pal_Linux_x86_64.tar.gz"
+        sha256 "2d00a11015b0dc251ca4140d49f0ca5ede85a3e024be7da97a0feba2edb1ff32"
 
         def install
           bin.install "pal"
@@ -39,8 +39,8 @@ class Pal < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaytyrrell13/pal/releases/download/v1.1.0/pal_Linux_arm64.tar.gz"
-        sha256 "ec0a017264dd9e34a2f97018870b288cc15f972561e90b923700481c85dbb18f"
+        url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.0/pal_Linux_arm64.tar.gz"
+        sha256 "c921ae3bac888c8de4cdee6d25d14ff107d07f0839f95891cdd21627a595428b"
 
         def install
           bin.install "pal"
