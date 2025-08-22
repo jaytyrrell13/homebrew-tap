@@ -5,20 +5,20 @@
 class Pal < Formula
   desc ""
   homepage "https://github.com/jaytyrrell13/pal"
-  version "1.2.1"
+  version "2.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.1/pal_Darwin_x86_64.tar.gz"
-      sha256 "58073611415ab14171c982f6642e8650eadd93ede77c347d0e6caca7a58ffc1e"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Darwin_x86_64.tar.gz"
+      sha256 "72028ae1036623991b37df689ed2d2555539c434c72d830d0af55f663a4c0afb"
 
       def install
         bin.install "pal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.1/pal_Darwin_arm64.tar.gz"
-      sha256 "4fea7bc542b589f853f9c8bc6b59f2a2957eeadd1601efd3c5e50a14d3c5f476"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Darwin_arm64.tar.gz"
+      sha256 "a4016b5ec46c1ed280298ac93909a2a7cafe0baeb588b5d6c51c02212074d019"
 
       def install
         bin.install "pal"
@@ -28,15 +28,15 @@ class Pal < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.1/pal_Linux_x86_64.tar.gz"
-      sha256 "42eb9a1398108cda61c7f79c29c53c02e5b96639a04123cc679b5f059620daf9"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Linux_x86_64.tar.gz"
+      sha256 "27e650ac856e3437cb1958bb749b0295c1101fac54bd19d65a34b98061167ec7"
       def install
         bin.install "pal"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v1.2.1/pal_Linux_arm64.tar.gz"
-      sha256 "334d4715f2ff8dcd6749e30d47d0429682e39206761613988626cde61493e9a8"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Linux_arm64.tar.gz"
+      sha256 "b665f71553f7a16d49608abbff1515c787f0a29f1154df9c2d1415f36e2d42b8"
       def install
         bin.install "pal"
       end
