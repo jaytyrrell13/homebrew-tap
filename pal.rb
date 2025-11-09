@@ -5,20 +5,20 @@
 class Pal < Formula
   desc ""
   homepage "https://github.com/jaytyrrell13/pal"
-  version "2.0.0"
+  version "2.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Darwin_x86_64.tar.gz"
-      sha256 "72028ae1036623991b37df689ed2d2555539c434c72d830d0af55f663a4c0afb"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.1/pal_Darwin_x86_64.tar.gz"
+      sha256 "756a19e21d9d02b59eb69a80f39b3b2a1caaf8bb046e7f492876b21a74fff6b0"
 
       def install
         bin.install "pal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Darwin_arm64.tar.gz"
-      sha256 "a4016b5ec46c1ed280298ac93909a2a7cafe0baeb588b5d6c51c02212074d019"
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.1/pal_Darwin_arm64.tar.gz"
+      sha256 "7ec26ccc44c846c62149c59b8baf1c0f4fd1cd2bb2c9bde7fbdf31be9362548f"
 
       def install
         bin.install "pal"
@@ -27,16 +27,16 @@ class Pal < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Linux_x86_64.tar.gz"
-      sha256 "27e650ac856e3437cb1958bb749b0295c1101fac54bd19d65a34b98061167ec7"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.1/pal_Linux_x86_64.tar.gz"
+      sha256 "6511edff189fe63bb7d501a3982f3ef36671b63cb7d72163855a076b374bb308"
       def install
         bin.install "pal"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.0/pal_Linux_arm64.tar.gz"
-      sha256 "b665f71553f7a16d49608abbff1515c787f0a29f1154df9c2d1415f36e2d42b8"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jaytyrrell13/pal/releases/download/v2.0.1/pal_Linux_arm64.tar.gz"
+      sha256 "8f6c4f012f9475355402f19820e369ff2f641d9e6c4b521789c20d16df9d6cda"
       def install
         bin.install "pal"
       end
